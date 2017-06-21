@@ -1,0 +1,28 @@
+<body>
+  <div class="container">
+    <header>
+      <h1>Tracking List ({{incompleteCount}})</h1>
+
+      <label class="hide-completed">
+        <input type="checkbox" />
+        Hide Delivered Items
+      </label>
+
+      {{> loginButtons}}
+
+      {{#if currentUser}}
+        <form class="new-item">
+					<input type="text" name="code" placeholder="Type to add new item to tracking" />
+					<textarea type="text" name="desc" placeholder="Type a description" ></textarea>
+					<button>create</button>
+        </form>
+      {{/if}}
+    </header>
+
+    <ul>
+      {{#each items}}
+        {{> item}}
+      {{/each}}
+    </ul>
+  </div>
+</body>
