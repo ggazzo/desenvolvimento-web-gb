@@ -4,5 +4,5 @@ meteor npm install
 meteor run
 ```
 
-![screenshot](screenshot.png)
+![screenshot](sample.gif)
 # desenvolvimento-web-gb
